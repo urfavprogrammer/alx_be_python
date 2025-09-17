@@ -1,8 +1,8 @@
 import math
-user_monthly_income = int(input("Enter your monthly income: "))
-user_monthly_expenses = int(input("Enter your total monthly expenses: "))
+monthly_income = int(input("Enter your monthly income: "))
+monthly_expenses = int(input("Enter your total monthly expenses: "))
 
-monthly_savings = user_monthly_income - user_monthly_expenses
+monthly_savings = float(monthly_income) - float(monthly_expenses)
 
 projected_savings = math.ceil(monthly_savings * 12 + (monthly_savings * 12 * 0.05))
 
