@@ -1,5 +1,12 @@
 shopping_list = []
 
+def display_menu():
+    print("\nShopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Clear List")
+
 def add_item(item):
     shopping_list.append(item)
     print(f"Added {item} to the shopping list.")
@@ -21,14 +28,11 @@ def view_list():
 def clear_list():
     shopping_list.clear()
     print("Cleared the shopping list.")
-    
+
 def main():
     while True:
-        print("\nShopping List Manager")
-        print("1. Add item")
-        print("2. Remove item")
-        print("3. View list")
-        print("4. Clear list")
+        display_menu()
+        
         print("5. Exit")
         
         choice = input("Choose an option: ").strip()
