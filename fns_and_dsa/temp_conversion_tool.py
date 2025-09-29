@@ -1,3 +1,5 @@
+
+    
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
@@ -20,7 +22,7 @@ if temp.replace('.', '', 1).isdigit() == False:
     exit()
 
 
-unit = input("Is this in (C)elsius or (F)ahrenheit? ").strip().upper()
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
 if unit == "C":
     convert_to_fahrenheit(float(temp))
@@ -28,4 +30,10 @@ elif unit == "F":
     convert_to_celsius(float(temp))
 else:
     print("Invalid unit. Please enter C or F.")
+
+
+
+
+
+
 
