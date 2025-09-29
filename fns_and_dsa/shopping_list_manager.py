@@ -1,11 +1,11 @@
 shopping_list = []
 
 def display_menu():
-    print("\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
-    print("4. Clear List")
+    print("4. Exit")
 
 def add_item(item):
     shopping_list.append(item)
@@ -33,8 +33,6 @@ def main():
     while True:
         display_menu()
         
-        print("5. Exit")
-        
         choice = input("Choose an option: ").strip()
         
         if choice == '1':
@@ -47,7 +45,6 @@ def main():
             view_list()
         elif choice == '4':
             clear_list()
-        elif choice == '5':
             print("Exiting Shopping List Manager.")
             break
         else:
